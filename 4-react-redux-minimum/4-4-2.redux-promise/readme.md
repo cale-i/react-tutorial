@@ -8,3 +8,7 @@ npm install --save-dev redux
 npm install --save-dev redux-logger
 npm install --save-dev axios
 npm install --save-dev redux-promise-middleware
+
+# test server
+
+node test_server.js
