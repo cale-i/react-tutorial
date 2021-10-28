@@ -1,7 +1,8 @@
 import { applyMiddleware, createStore } from "redux";
 import axios from "axios";
 import { createLogger } from "redux-logger";
-import promise from "redux-promise-middleware";
+import { createPromise } from "redux-promise-middleware";
+const promise = createPromise({ type: { fulfilled: "success" } });
 
 const initialState = {
 	fetching: false,
